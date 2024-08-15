@@ -25,14 +25,23 @@ function startLoader() {
 }
 
 startLoader();
+gsap.to(".overlay", 1.5 , {
+    delay: 2,
+    onComplete: function() {
+        document.querySelector(".overlay").style.zIndex = -1;
+    }
+});
 
 gsap.to(".counter", 0.25 , {
-    delay: 2.9,
+    delay: 2.4,
     opacity: 0,
+    onComplete: function() {
+        document.querySelector(".counter").classList.add('hidden');
+    }
 },);
 
 gsap.to(".bar", 1.5, {
-    delay: 2.7,
+    delay: 2,
     height: 0,
     stagger: {
         amount: 0.5,
@@ -41,7 +50,7 @@ gsap.to(".bar", 1.5, {
 });
 
 gsap.from(".h1v", 1.5, {
-    delay: 3.4,
+    delay: 2.8,
     y: 100,
     stagger: {
         amount:0.5,
@@ -51,7 +60,7 @@ gsap.from(".h1v", 1.5, {
 });
 
 gsap.from(".h1v2", 1.7, {
-    delay: 3.5,
+    delay: 2.9,
     y: 100,
     stagger: {
         amount:0.5,
@@ -60,7 +69,7 @@ gsap.from(".h1v2", 1.7, {
     ease: "power4.inOut",
 });
 gsap.from(".h1v3", 1.8, {
-    delay: 3.6,
+    delay: 3,
     y: 100,
     stagger: {
         amount:0.5,
@@ -69,7 +78,7 @@ gsap.from(".h1v3", 1.8, {
     ease: "power4.inOut",
 });
 gsap.from(".h1v4", 1.9, {
-    delay: 3.7,
+    delay: 3.1,
     y: 100,
     stagger: {
         amount:0.5,
@@ -77,3 +86,14 @@ gsap.from(".h1v4", 1.9, {
     },
     ease: "power4.inOut",
 });
+
+document.addEventListener('scroll', () => {
+    const nav = document.getElementById("nav");
+    const aside = document.getElementById('set-height');
+    
+    if (window.scrollY > aside.offsetHeight) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+})

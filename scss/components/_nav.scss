@@ -4,6 +4,8 @@
     height: 10vh;
     padding: 20px;
     color: white;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
     
 
     &-box {
@@ -23,8 +25,18 @@
         &-li {
             padding-right: 70px;
             font-size: $mediumfont;
+
+            & > a {
+                text-decoration: none;
+                color: white;
+            }
         }
         }
     }
     
+}
+
+.nav.scrolled {
+    background-color: black;
+    color: white;
 }

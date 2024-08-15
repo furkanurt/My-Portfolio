@@ -3,7 +3,7 @@
     height: 50px;
     color: grey;
 
-    &-white {
+    &-transparent {
     width: 120px;
     height: 37px;
     color: white;
@@ -11,10 +11,17 @@
     border: 2px solid white;
     font-size: $mssfont;
     border-radius: 6px;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        color: black;
+        background: white;
+
+    }
     }
 
 
-    &-transparent {
+    &-white {
         width: 120px;
         height: 37px;
         color: black;
@@ -22,8 +29,13 @@
         font-size: $mssfont;
         border: none;
         border-radius: 6px;
+        transition: 0.2s ease-in-out;
 
-       
-
+        &:hover {
+        color: white;
+        background: transparent;
+        border: 2px solid white;
+        }
+   
     }
 }

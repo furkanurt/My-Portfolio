@@ -9,6 +9,7 @@
     padding: 0.1em 0.2em;
     font-size: 20vw;
     color: coral;
+    transition: z-index 0s 0.25s, opacity 0.25s;
 }
 
 .overlay {
@@ -23,4 +24,8 @@
     width: 100vh;
     height: 105vh;
     background: black;
+}
+.counter.hidden {
+    opacity: 0;
+    z-index: -1; /* z-index'i düşür */
 }
