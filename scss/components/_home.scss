@@ -43,6 +43,14 @@
             & > h1 {
                 font-size: $xxlargefont;
             }
+
+            & > h2 {
+                padding-top: 5px;
+            }
+
+            &-buttons {
+                padding-top: 50px;
+            }
         }
 
         &-right {
