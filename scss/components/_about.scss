@@ -1,0 +1,50 @@
+.about {
+    padding: 2em;
+    height: 700px;
+    
+    display: flex;
+    flex-direction: column;
+
+    &-imag {
+        border-radius: 200px;
+        height: 400px;
+       
+    }
+
+    &> h1 {
+     font-size: $xlargefont;
+     padding-bottom: 50px;
+
+    }
+    
+    &-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        &-left {
+            align-items: center;
+            width: 30%;
+            height: 100%;
+
+            &-radius {
+                background: linear-gradient(rgb(251, 29, 4), rgb(255, 128, 0) , white);
+                display: flex;
+                height: 400px;
+                width: 400px;
+                border-radius: 200px;
+            }
+
+            
+        }
+
+        &-right {
+            width: 70%;
+            height: 100%;
+            margin: 2rem;
+            border: 2px solid white;
+        }
+    }
+
+}

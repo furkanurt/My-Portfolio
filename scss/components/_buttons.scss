@@ -1,0 +1,29 @@
+.button {
+    width: 100px;
+    height: 50px;
+    color: grey;
+
+    &-white {
+    width: 120px;
+    height: 37px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: $mssfont;
+    border-radius: 6px;
+    }
+
+
+    &-transparent {
+        width: 120px;
+        height: 37px;
+        color: black;
+        background: white;
+        font-size: $mssfont;
+        border: none;
+        border-radius: 6px;
+
+       
+
+    }
+}

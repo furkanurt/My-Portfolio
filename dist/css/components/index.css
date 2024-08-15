@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px; }
+  .home-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    background-size: cover; }
+  .home-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  padding: 20px; }
+  .nav-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+    .nav-box-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end; }
