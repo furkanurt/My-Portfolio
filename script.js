@@ -97,3 +97,10 @@ document.addEventListener('scroll', () => {
         nav.classList.remove('scrolled');
     }
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('.home-background');
+    video.play().catch(function(error) {
+        console.log('Video autoplay blocked:', error);
+    });
+});
