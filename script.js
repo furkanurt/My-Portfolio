@@ -17,7 +17,7 @@ function startLoader() {
 
         counterElement.textContent = currentValue;
 
-        let delay= Math.floor(Math.random() * 200) + 10;
+        let delay= Math.floor(Math.random() * 200) + 1;
         setTimeout(updateCounter, delay);
     }
     updateCounter();
@@ -27,12 +27,12 @@ function startLoader() {
 startLoader();
 
 gsap.to(".counter", 0.25 , {
-    delay: 3.5,
+    delay: 2.9,
     opacity: 0,
 },);
 
 gsap.to(".bar", 1.5, {
-    delay: 3.3,
+    delay: 2.7,
     height: 0,
     stagger: {
         amount: 0.5,
@@ -41,7 +41,7 @@ gsap.to(".bar", 1.5, {
 });
 
 gsap.from(".h1v", 1.5, {
-    delay: 3.6,
+    delay: 3.4,
     y: 100,
     stagger: {
         amount:0.5,
@@ -51,7 +51,7 @@ gsap.from(".h1v", 1.5, {
 });
 
 gsap.from(".h1v2", 1.7, {
-    delay: 3.7,
+    delay: 3.5,
     y: 100,
     stagger: {
         amount:0.5,
@@ -60,7 +60,7 @@ gsap.from(".h1v2", 1.7, {
     ease: "power4.inOut",
 });
 gsap.from(".h1v3", 1.8, {
-    delay: 3.8,
+    delay: 3.6,
     y: 100,
     stagger: {
         amount:0.5,
@@ -69,7 +69,7 @@ gsap.from(".h1v3", 1.8, {
     ease: "power4.inOut",
 });
 gsap.from(".h1v4", 1.9, {
-    delay: 3.8,
+    delay: 3.7,
     y: 100,
     stagger: {
         amount:0.5,

@@ -1,0 +1,21 @@
+.projects {
+    padding: 2em;
+    padding-left: 4em;
+
+    & > h1 {
+        font-size: $xxlargefont;
+    }
+
+    &-grids {
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(490px, 2fr));
+        grid-gap: 3rem;
+        padding-top: 3rem;
+
+        &-box {
+            border: 2px solid coral;
+            height: 400px;
+        }
+    }
+}
