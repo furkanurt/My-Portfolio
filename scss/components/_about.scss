@@ -74,9 +74,26 @@
 
 @include mobile {
     .about {
+        padding-left: 2em; // Mobilde padding değerini de azaltabilirsin
 
         &-box {
             flex-direction: column;
+
+            &-left, &-right {
+                width: 100%;
+                margin: 0; // Margin'leri sıfırlayarak hizalamayı düzeltebilirsin
+            }
+
+            &-right {
+                & > h1 {
+                    padding-left: 0;
+                    text-align: center; // Başlığı ortalayabilirsin
+                }
+
+                &-summary {
+                    padding: 1em; // Mobilde padding değerlerini küçültebilirsin
+                }
+            }
         }
     }
 }

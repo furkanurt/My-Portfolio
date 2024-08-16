@@ -163,8 +163,18 @@ body {
           font-size: 25px; }
 
 @media only screen and (max-width: 768px) {
-  .about-box {
-    flex-direction: column; } }
+  .about {
+    padding-left: 2em; }
+    .about-box {
+      flex-direction: column; }
+      .about-box-left, .about-box-right {
+        width: 100%;
+        margin: 0; }
+      .about-box-right > h1 {
+        padding-left: 0;
+        text-align: center; }
+      .about-box-right-summary {
+        padding: 1em; } }
 
 .counter {
   position: fixed;
