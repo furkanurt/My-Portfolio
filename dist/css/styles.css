@@ -149,19 +149,18 @@ body {
       height: 100%;
       margin: 2rem;
       display: flex;
-      align-items: center;
-      flex-direction: row; }
+      align-items: start;
+      flex-direction: column; }
+      .about-box-right > h1 {
+        padding-left: 1em;
+        font-size: 45px; }
       .about-box-right-summary {
         width: 100%;
-        height: 100%; }
+        height: 70%; }
         .about-box-right-summary > p {
           padding: 2em;
+          padding-bottom: 1em;
           font-size: 25px; }
-      .about-box-right-skills {
-        border-radius: 10px;
-        width: 30%;
-        height: 100%;
-        background: linear-gradient(#fb1d04, #ff8000, white); }
 
 .counter {
   position: fixed;
@@ -205,7 +204,7 @@ body {
     padding-top: 3rem; }
     .projects-grids-box {
       border-radius: 3px;
-      background: #ff6139;
+      background: #fb5a04;
       height: 410px;
       display: flex;
       flex-direction: row;
@@ -231,7 +230,7 @@ body {
 
 @keyframes appear {
   from {
-    opacity: 0.4;
+    opacity: 0.5;
     scale: 0.8; }
   to {
     opacity: 1;
@@ -241,3 +240,32 @@ body {
   padding: 3em 4em 3em 4em; }
   .contact > h1 {
     font-size: 90px; }
+
+.logos {
+  width: 70%;
+  margin-top: 1em;
+  margin-left: 3.2em;
+  margin-right: 2em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1; }
+  .logos::before, .logos::after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100px;
+    content: "";
+    z-index: 2;
+    color: gray; }
+  .logos-slide {
+    animation: 10s slider infinite linear;
+    white-space: nowrap; }
+    .logos-slide > img {
+      height: 70px;
+      padding-right: 15px; }
+
+@keyframes slider {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-150%); } }
