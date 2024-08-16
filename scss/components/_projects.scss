@@ -15,18 +15,30 @@
         &-box {
             border-radius: 3px;
             background: rgb(255, 97, 57);
-            height: 400px;
+            height: 410px;
             display: flex;
             flex-direction: row;
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0%;
 
             &-left {
-                width: 50%;
+                width: 60%;
                 height: 100%;
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                & > img {
+
+                    height: 58%;
+                }
 
             }
 
             &-right {
-                width: 50%;
+                width: 40%;
                 display: flex;
                 flex-direction: column;
                 padding: 2em;
@@ -35,4 +47,18 @@
             }
         }
     }
+}
+
+
+@keyframes appear {
+ from { 
+    opacity: 0.4;
+    scale: 0.8;
+ }
+
+ to{
+    opacity: 1;
+    scale: 1;
+ }
+
 }
