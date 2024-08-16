@@ -164,7 +164,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   .about {
-    padding-left: 2em; }
+    padding-left: 2em;
+    height: 700px; }
     .about-box {
       flex-direction: column; }
       .about-box-left, .about-box-right {

@@ -75,7 +75,7 @@
 @include mobile {
     .about {
         padding-left: 2em; // Mobilde padding değerini de azaltabilirsin
-
+        height: 700px;
         &-box {
             flex-direction: column;
 
