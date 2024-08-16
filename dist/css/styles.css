@@ -162,6 +162,10 @@ body {
           padding-bottom: 1em;
           font-size: 25px; }
 
+@media only screen and (max-width: 768px) {
+  .about-box {
+    flex-direction: column; } }
+
 .counter {
   position: fixed;
   width: 100%;
@@ -242,7 +246,7 @@ body {
     font-size: 90px; }
 
 .logos {
-  width: 70%;
+  width: 50%;
   margin-top: 1em;
   margin-left: 3.2em;
   margin-right: 2em;
@@ -261,7 +265,7 @@ body {
     animation: 10s slider infinite linear;
     white-space: nowrap; }
     .logos-slide > img {
-      height: 70px;
+      height: 50px;
       padding-right: 15px; }
 
 @keyframes slider {

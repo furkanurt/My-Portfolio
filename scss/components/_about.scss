@@ -71,3 +71,12 @@
     }
 
 }
+
+@include mobile {
+    .about {
+
+        &-box {
+            flex-direction: column;
+        }
+    }
+}
