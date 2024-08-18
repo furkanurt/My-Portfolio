@@ -75,9 +75,8 @@
 @include mobile {
     .about {
         padding-left: 2em; // Mobilde padding değerini de azaltabilirsin
-        height: 1110px;
-        align-items: center;
-        justify-content: center;
+        height: 100px;
+        padding-bottom: 3rem;
 
         &-imag {
             height: 300px;

@@ -185,9 +185,8 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .about {
     padding-left: 2em;
-    height: 1110px;
-    align-items: center;
-    justify-content: center; }
+    height: 100px;
+    padding-bottom: 3rem; }
     .about-imag {
       height: 300px;
       border-radius: 150px; }
