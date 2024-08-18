@@ -75,7 +75,9 @@
 @include mobile {
     .about {
         padding-left: 2em; // Mobilde padding değerini de azaltabilirsin
-        height: 1000px;
+        height: 1110px;
+        align-items: center;
+        justify-content: center0;
 
         &-imag {
             height: 300px;
@@ -97,7 +99,7 @@
                 }
 
                 &-summary {
-                    padding: 1em; // Mobilde padding değerlerini küçültebilirsin
+                    padding: 1em; 
                     font-size: $largefont;
                  
                     &-text {
