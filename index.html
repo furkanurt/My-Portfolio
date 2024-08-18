@@ -28,7 +28,7 @@
         <div class="nav-box">
             <ul class="nav-box-list">
                 <li class="nav-box-list-li"><a class="link-white" href="#about">about</a></li>
-                <li class="nav-box-list-li"><a class="link-white" href="#projects">contact</a></li>
+                <li class="nav-box-list-li"><a class="link-white" href="#projects">projects</a></li>
                 <li class="nav-box-list-li"><a class="link-white" href="#contact">contact</a></li>
             </ul>
         </div>
@@ -40,8 +40,8 @@
                     <h1 class="h1v" >Hi! I'm Furkan</h1>
                     <h2 class="h1v2">UI Developer</h2>
                     <div class="home-box-top-left-buttons" id="set-height">
-                        <button class="button-transparent h1v3">Projects</button>
-                        <button class="button-white h1v4">Linkedn</button> 
+                        <button class="button-transparent h1v3" onclick="document.location='https://github.com/furkanurt'">Projects</button>
+                        <button class="button-white h1v4" onclick="document.location='https://www.linkedin.com/in/furkan-onur-tozlu-568915233/'" >Linkedn</button> 
                     </div>
                 </div>
                 <div class="home-box-top-right">
@@ -69,6 +69,7 @@
                         friendly web applications. Skilled in using modern frameworks like Vue.js and SCSS to build high
                         performance websites. Committed to continuous learning and applying best practices for optimal 
                         user experiences. </p>
+                        <p class="small-text">to see more visit my <a href="">Linkedn</a></p>
                 </div>
                 <h1>Skills</h1>
                 <div class="logos">
@@ -143,27 +144,24 @@
                     <button class="button-transparent" onclick="document.location='https://republicrecords.netlify.app/'">See Project</button>
                 </div>
             </div>
-            
         </div>
+        <button class="button-transparent h1v3" onclick="document.location='https://github.com/furkanurt'">See More</button>
     </section>
     <section class="contact">
         <h1 class="header" id="contact">Contact</h1>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contactForm" action="send_email.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-        
-                <button type="submit">Send Email</button>
-            </form>
-        </section>
+        <div class="contact-box">
+            <div class="contact-box-left">
+                <ul class="contact-box-left-list">
+                    <li class="contact-box-left-list-item"></li>
+                    <li class="contact-box-left-list-item"></li>
+                    <li class="contact-box-left-list-item"></li>
+                    <li class="contact-box-left-list-item"></li>
+                </ul>
+            </div>
+            <div class="contact-box-right">
+                <button class="button-transparent" onclick="sendEmail()">Send Email</button>
+            </div>
+        </div>
     </section>
 
 

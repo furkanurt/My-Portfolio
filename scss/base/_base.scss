@@ -17,3 +17,26 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.small-text {
+    font-size: $msfont;
+    padding: 2em;
+    padding-bottom: 1em;
+
+    & > a {
+        text-decoration:underline;
+        color: white;
+    }
+}
+
+a{
+    transition: 0.3s ease-in-out;
+}
+
+a:hover{ 
+    color: coral;
+
+}

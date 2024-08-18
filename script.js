@@ -104,3 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Video autoplay blocked:', error);
     });
 });
+
+function sendEmail() {
+    window.location.href = "mailto:onurtozlu@hotmail.com";
+}
