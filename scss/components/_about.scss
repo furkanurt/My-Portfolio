@@ -75,7 +75,12 @@
 @include mobile {
     .about {
         padding-left: 2em; // Mobilde padding değerini de azaltabilirsin
-        height: 700px;
+        height: 1000px;
+
+        &-imag {
+            height: 300px;
+            border-radius: 150px;
+        }
         &-box {
             flex-direction: column;
 
@@ -87,12 +92,30 @@
             &-right {
                 & > h1 {
                     padding-left: 0;
+                    font-size: $largefont;
                     text-align: center; // Başlığı ortalayabilirsin
                 }
 
                 &-summary {
                     padding: 1em; // Mobilde padding değerlerini küçültebilirsin
+                    font-size: $largefont;
+                 
+                    &-text {
+                        padding: 1em; 
+                        font-size: $mssfont;
+                        
+                    }
                 }
+            }
+
+            &-left {
+
+                &-radius {
+                   height: 300px;
+                   width: 300px;
+                   border-radius: 150px;
+                }
+
             }
         }
     }

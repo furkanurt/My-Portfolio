@@ -185,7 +185,10 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .about {
     padding-left: 2em;
-    height: 700px; }
+    height: 1000px; }
+    .about-imag {
+      height: 300px;
+      border-radius: 150px; }
     .about-box {
       flex-direction: column; }
       .about-box-left, .about-box-right {
@@ -193,9 +196,18 @@ a:hover {
         margin: 0; }
       .about-box-right > h1 {
         padding-left: 0;
+        font-size: 45px;
         text-align: center; }
       .about-box-right-summary {
-        padding: 1em; } }
+        padding: 1em;
+        font-size: 45px; }
+        .about-box-right-summary-text {
+          padding: 1em;
+          font-size: 15px; }
+      .about-box-left-radius {
+        height: 300px;
+        width: 300px;
+        border-radius: 150px; } }
 
 .counter {
   position: fixed;
@@ -228,11 +240,10 @@ a:hover {
   /* z-index'i düşür */ }
 
 .projects {
-  padding: 4rem 4rem 4rem 4rem; }
+  padding: 4rem; }
   .projects > h1 {
     font-size: 90px; }
   .projects-grids {
-    display: grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(490px, 2fr));
     grid-gap: 3rem;
@@ -255,7 +266,9 @@ a:hover {
         justify-content: center;
         overflow: hidden; }
         .projects-grids-box-left > img {
-          height: 58%; }
+          height: 58%;
+          max-width: 100%;
+          max-height: 70%; }
       .projects-grids-box-right {
         width: 40%;
         display: flex;
@@ -263,14 +276,31 @@ a:hover {
         padding: 2em;
         align-items: flex-end;
         justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    .projects {
+      padding: 2rem; }
+      .projects-grids {
+        grid-template-columns: 1fr; }
+        .projects-grids-box {
+          flex-direction: column; }
+          .projects-grids-box-left {
+            width: 100%; }
+            .projects-grids-box-left > img {
+              height: auto;
+              max-width: 100%; }
+          .projects-grids-box-right {
+            width: 100%;
+            padding: 1em;
+            align-items: center;
+            justify-content: center; } }
 
 @keyframes appear {
   from {
     opacity: 0.5;
-    scale: 0.8; }
+    transform: scale(0.8); }
   to {
     opacity: 1;
-    scale: 1; } }
+    transform: scale(1); } }
 
 .contact {
   padding: 7em 4em 3em 4em; }

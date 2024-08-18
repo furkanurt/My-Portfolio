@@ -1,12 +1,13 @@
+
+
 .projects {
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 4rem;
 
     & > h1 {
         font-size: $xxlargefont;
     }
 
     &-grids {
-        display: grid;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(490px, 2fr));
         grid-gap: 3rem;
@@ -32,10 +33,10 @@
                 overflow: hidden;
 
                 & > img {
-
                     height: 58%;
+                    max-width: 100%;  // Genişliğin taşmasını engelle
+                    max-height: 70%; // Yüksekliğin taşmasını engelle
                 }
-
             }
 
             &-right {
@@ -48,18 +49,44 @@
             }
         }
     }
+
+    @include mobile {
+        padding: 2rem;
+
+        &-grids {
+            grid-template-columns: 1fr; // Mobilde grid yapısını 1 sütun yap
+
+            &-box {
+                flex-direction: column; // Mobilde kutuların içindeki düzeni dikey yap
+
+                &-left {
+                    width: 100%;
+                    
+                    & > img {
+                        height: auto;
+                        max-width: 100%; // Resmin genişliğinin mobil ekrana uymasını sağla
+                    }
+                }
+
+                &-right {
+                    width: 100%;
+                    padding: 1em;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
 
-
 @keyframes appear {
- from { 
-    opacity: 0.5;
-    scale: 0.8;
- }
+    from {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
 
- to{
-    opacity: 1;
-    scale: 1;
- }
-
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
