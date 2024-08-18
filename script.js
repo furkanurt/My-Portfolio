@@ -108,3 +108,26 @@ document.addEventListener('DOMContentLoaded', function() {
 function sendEmail() {
     window.location.href = "mailto:onurtozlu@hotmail.com";
 }
+
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    // İndirilecek PDF dosyasının yolunu belirleyin
+    const pdfPath = 'assets/dosya.pdf';
+
+    // Yeni bir anchor (a) elemanı oluşturun
+    const a = document.createElement("a");
+
+    // href özelliğine PDF yolunu ekleyin
+    a.href = pdfPath;
+
+    // İndirilecek dosya adını belirleyin
+    a.download = 'dosya.pdf';
+
+    // Anchor elemanını body'e ekleyin (gereklidir)
+    document.body.appendChild(a);
+
+    // İndirmenin başlaması için tıklayın
+    a.click();
+
+    // Tıklamadan sonra anchor elemanını body'den kaldırın
+    document.body.removeChild(a);
+});
