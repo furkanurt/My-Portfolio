@@ -269,7 +269,8 @@ a:hover {
     font-size: 90px; }
   .projects > p {
     font-size: 15px;
-    font-weight: 200; }
+    font-weight: 200;
+    padding-bottom: 5px; }
   .projects-grids {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(490px, 2fr));
@@ -309,7 +310,8 @@ a:hover {
       .projects-grids {
         grid-template-columns: 1fr; }
         .projects-grids-box {
-          flex-direction: column; }
+          flex-direction: column;
+          height: 430px; }
           .projects-grids-box-left {
             width: 100%; }
             .projects-grids-box-left > img {

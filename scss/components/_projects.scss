@@ -10,6 +10,7 @@
 
         font-size: $mssfont;
         font-weight: 200;
+        padding-bottom: 5px;
     }
 
     &-grids {
@@ -63,7 +64,7 @@
 
             &-box {
                 flex-direction: column; // Mobilde kutuların içindeki düzeni dikey yap
-                
+                height: 430px;
 
                 &-left {
                     width: 100%;
