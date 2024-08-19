@@ -78,6 +78,10 @@ a:hover {
       height: 1%;
       background: linear-gradient(transparent, black); }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 45px; } }
+
 .nav {
   position: fixed;
   width: 100%;
@@ -110,6 +114,10 @@ a:hover {
 .nav.scrolled {
   background-color: black;
   color: white; }
+
+@media only screen and (max-width: 768px) {
+  -li {
+    padding-right: 10px; } }
 
 .button {
   width: 100px;

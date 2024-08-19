@@ -73,3 +73,9 @@
 
 
 }
+
+@include mobile {
+    h1 {
+        font-size: $largefont;
+    }
+}

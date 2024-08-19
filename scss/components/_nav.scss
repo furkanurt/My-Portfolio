@@ -45,3 +45,9 @@
     background-color: black;
     color: white;
 }
+
+@include mobile {
+    &-li {
+        padding-right: 10px;
+    }
+}
