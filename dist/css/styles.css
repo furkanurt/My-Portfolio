@@ -306,9 +306,9 @@ a:hover {
     transform: scale(1); } }
 
 .contact {
-  padding: 7em 3em 1em 3em;
+  padding: 5em 3em 1em 3em;
   width: 100%;
-  height: 600px;
+  height: 650px;
   display: flex;
   flex-direction: column; }
   .contact > h1 {
@@ -322,18 +322,46 @@ a:hover {
     justify-content: flex-start;
     border-bottom: 2px solid white; }
     .contact-box-left {
+      top: 5em;
       width: 40%;
       height: 100%;
       display: flex;
       padding-top: 2em; }
+      .contact-box-left-list {
+        font-size: 20px;
+        font-weight: 200;
+        list-style: none; }
+        .contact-box-left-list-item {
+          padding-bottom: 15px;
+          font-weight: 200; }
     .contact-box-right {
-      padding-top: 2em;
+      padding-top: 0;
       display: flex;
       flex-direction: row;
       width: 60%;
       height: 100%; }
-      .contact-box-right-email > img {
-        height: 300px; }
+      .contact-box-right-email {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 50%; }
+        .contact-box-right-email > h2 {
+          padding: 1em;
+          padding-top: 0; }
+        .contact-box-right-email > img {
+          height: 180px; }
+      .contact-box-right-cv {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%; }
+        .contact-box-right-cv > h2 {
+          padding: 1em;
+          padding-top: 0; }
+        .contact-box-right-cv > img {
+          height: 180px; }
   .contact-footer {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -345,7 +373,7 @@ a:hover {
     font-weight: 300;
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
     .contact-footer > img {
-      height: 20px; }
+      height: 17px; }
 
 .logos {
   width: 50%;
