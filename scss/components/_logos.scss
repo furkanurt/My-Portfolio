@@ -36,3 +36,12 @@
         transform: translateX(-150%);
     }
 }
+
+@include mobile {
+
+    .logos {
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}

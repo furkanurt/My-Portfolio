@@ -187,7 +187,7 @@ a:hover {
 @media only screen and (max-width: 768px) {
   .about {
     padding-left: 2em;
-    height: 1100px;
+    height: 1000px;
     padding-bottom: 3rem; }
     .about-imag {
       height: 300px;
@@ -196,21 +196,27 @@ a:hover {
       flex-direction: column; }
       .about-box-left, .about-box-right {
         width: 100%;
+        align-items: center;
         margin: 0; }
       .about-box-right > h1 {
         padding-left: 0;
         font-size: 45px;
+        align-items: center;
         text-align: center; }
       .about-box-right-summary {
-        padding: 1em;
+        padding: 10px;
         font-size: 45px; }
         .about-box-right-summary-text {
           padding: 1em;
           font-size: 15px; }
-      .about-box-left-radius {
-        height: 300px;
-        width: 300px;
-        border-radius: 150px; } }
+      .about-box-left {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .about-box-left-radius {
+          height: 300px;
+          width: 300px;
+          border-radius: 150px; } }
 
 .counter {
   position: fixed;
@@ -426,3 +432,9 @@ a:hover {
     transform: translateX(0); }
   to {
     transform: translateX(-150%); } }
+
+@media only screen and (max-width: 768px) {
+  .logos {
+    width: 90%;
+    margin-left: 0%;
+    margin-right: 0%; } }
