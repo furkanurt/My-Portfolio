@@ -47,7 +47,23 @@
 }
 
 @include mobile {
-    &-li {
-        padding-right: 10px;
+
+    .nav {
+
+        height: 9vh;
+
+        &-box {
+
+            &-list {
+
+                &-li {
+                    padding-right: 30px;
+                    font-size: $msfont;
+                }
+
+                
+            }
+        }
+        
     }
-}
+    }
