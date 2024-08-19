@@ -291,7 +291,10 @@ a:hover {
       .projects-grids {
         grid-template-columns: 1fr; }
         .projects-grids-box {
-          flex-direction: column; }
+          flex-direction: column;
+          animation: appear linear;
+          animation-timeline: view();
+          animation-range: entry 0%; }
           .projects-grids-box-left {
             width: 100%; }
             .projects-grids-box-left > img {
