@@ -267,6 +267,9 @@ a:hover {
   padding: 4rem; }
   .projects > h1 {
     font-size: 90px; }
+  .projects > p {
+    font-size: 15px;
+    font-weight: 200; }
   .projects-grids {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(490px, 2fr));

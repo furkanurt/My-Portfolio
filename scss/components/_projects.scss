@@ -6,6 +6,11 @@
     & > h1 {
         font-size: $xxlargefont;
     }
+    & > p {
+
+        font-size: $mssfont;
+        font-weight: 200;
+    }
 
     &-grids {
         display: grid;
