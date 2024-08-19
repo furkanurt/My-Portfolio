@@ -75,7 +75,7 @@
 }
 
 @include mobile {
-    h1 {
+    & > h1 {
         font-size: $largefont;
     }
 }

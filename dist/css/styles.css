@@ -79,7 +79,7 @@ a:hover {
       background: linear-gradient(transparent, black); }
 
 @media only screen and (max-width: 768px) {
-  h1 {
+  > h1 {
     font-size: 45px; } }
 
 .nav {
@@ -299,10 +299,7 @@ a:hover {
       .projects-grids {
         grid-template-columns: 1fr; }
         .projects-grids-box {
-          flex-direction: column;
-          animation: appear linear;
-          animation-timeline: view();
-          animation-range: entry 0%; }
+          flex-direction: column; }
           .projects-grids-box-left {
             width: 100%; }
             .projects-grids-box-left > img {
