@@ -1,5 +1,3 @@
-
-
 .projects {
     padding: 4rem;
 
@@ -7,7 +5,6 @@
         font-size: $xxlargefont;
     }
     & > p {
-
         font-size: $mssfont;
         font-weight: 200;
     }
@@ -24,9 +21,8 @@
             height: 410px;
             display: flex;
             flex-direction: row;
-            animation: appear linear;
-            animation-timeline: view();
-            animation-range: entry 0%;
+            animation: appear 1s linear;  // Animasyon süresi eklendi
+            // Diğer özellikler...
 
             &-left {
                 width: 60%;
@@ -39,8 +35,8 @@
 
                 & > img {
                     height: 58%;
-                    max-width: 100%;  // Genişliğin taşmasını engelle
-                    max-height: 70%; // Yüksekliğin taşmasını engelle
+                    max-width: 100%;
+                    max-height: 70%;
                 }
             }
 
@@ -54,18 +50,19 @@
             }
         }
     }
+
     @keyframes appear {
         from {
             opacity: 0.5;
             transform: scale(0.8);
         }
-    
         to {
             opacity: 1;
             transform: scale(1);
         }
     }
-    @-webkit-keyframes appear { /* Safari and Chrome */
+
+    @-webkit-keyframes appear {  // Safari ve Chrome için uyumlu animasyon
         from {
             opacity: 0.5;
             transform: scale(0.8);
@@ -80,25 +77,19 @@
         padding: 2rem;
 
         &-grids {
-            grid-template-columns: 1fr; 
+            grid-template-columns: 1fr;
 
             &-box {
-                flex-direction: column; 
+                flex-direction: column;
                 height: 440px;
-                animation: appear linear;
-                animation-timeline: view();
-                 animation-range: entry 0%;
-                
+                animation: appear 1s linear;  // Burada da animasyon süresi ve isim doğru
 
                 &-left {
                     width: 100%;
-                    
                     & > img {
                         height: auto;
                         max-width: 70%;
                     }
-
-                    
                 }
 
                 &-right {
@@ -115,5 +106,3 @@
         }
     }
 }
-
-

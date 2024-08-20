@@ -281,9 +281,7 @@ a:hover {
       height: 410px;
       display: flex;
       flex-direction: row;
-      animation: appear linear;
-      animation-timeline: view();
-      animation-range: entry 0%; }
+      animation: appear 1s linear; }
       .projects-grids-box-left {
         width: 60%;
         height: 100%;
@@ -313,7 +311,6 @@ a:hover {
     transform: scale(1); } }
 
 @-webkit-keyframes appear {
-  /* Safari and Chrome */
   from {
     opacity: 0.5;
     transform: scale(0.8); }
@@ -328,9 +325,7 @@ a:hover {
         .projects-grids-box {
           flex-direction: column;
           height: 440px;
-          animation: appear linear;
-          animation-timeline: view();
-          animation-range: entry 0%; }
+          animation: appear 1s linear; }
           .projects-grids-box-left {
             width: 100%; }
             .projects-grids-box-left > img {
