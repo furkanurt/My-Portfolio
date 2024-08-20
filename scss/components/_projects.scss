@@ -71,21 +71,23 @@
         padding: 2rem;
 
         &-grids {
-            grid-template-columns: 1fr; // Mobilde grid yapısını 1 sütun yap
+            grid-template-columns: 1fr; 
 
             &-box {
-                flex-direction: column; // Mobilde kutuların içindeki düzeni dikey yap
-                height: 430px;
-                animation: appear linear;
-                animation-timeline: view();
-                animation-range: entry 0%;
+                flex-direction: column; 
+                height: 440px;
+                
 
                 &-left {
                     width: 100%;
                     
                     & > img {
                         height: auto;
-                        max-width: 70%; // Resmin genişliğinin mobil ekrana uymasını sağla
+                        max-width: 70%;
+                    }
+
+                    & > p {
+                        padding-bottom: 10px;
                     }
                 }
 
@@ -95,19 +97,6 @@
                     align-items: center;
                     justify-content: center;
                 }
-            }
-        }
-
-
-        @keyframes appear {
-            from {
-                opacity: 0.5;
-                transform: scale(0.8);
-            }
-        
-            to {
-                opacity: 1;
-                transform: scale(1);
             }
         }
     }

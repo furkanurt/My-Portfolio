@@ -319,27 +319,19 @@ a:hover {
         grid-template-columns: 1fr; }
         .projects-grids-box {
           flex-direction: column;
-          height: 430px;
-          animation: appear linear;
-          animation-timeline: view();
-          animation-range: entry 0%; }
+          height: 440px; }
           .projects-grids-box-left {
             width: 100%; }
             .projects-grids-box-left > img {
               height: auto;
               max-width: 70%; }
+            .projects-grids-box-left > p {
+              padding-bottom: 10px; }
           .projects-grids-box-right {
             width: 100%;
             padding: 1em;
             align-items: center;
-            justify-content: center; }
-    @keyframes appear {
-      from {
-        opacity: 0.5;
-        transform: scale(0.8); }
-      to {
-        opacity: 1;
-        transform: scale(1); } } }
+            justify-content: center; } }
 
 .contact {
   padding: 5em 3em 1em 3em;
