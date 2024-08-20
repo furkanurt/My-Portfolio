@@ -10,7 +10,6 @@
 
         font-size: $mssfont;
         font-weight: 200;
-        padding-bottom: 5px;
     }
 
     &-grids {
@@ -66,7 +65,7 @@
             transform: scale(1);
         }
     }
-    @-webkit-keyframes appear1 { /* Safari and Chrome */
+    @-webkit-keyframes appear { /* Safari and Chrome */
         from {
             opacity: 0.5;
             transform: scale(0.8);
@@ -86,9 +85,9 @@
             &-box {
                 flex-direction: column; 
                 height: 440px;
-                animation: appear1 linear;
-               animation-timeline: view();
-               animation-range: entry 0%;
+                animation: appear linear;
+                animation-timeline: view();
+                 animation-range: entry 0%;
                 
 
                 &-left {
@@ -99,9 +98,7 @@
                         max-width: 70%;
                     }
 
-                    & > p {
-                        padding-bottom: 10px;
-                    }
+                    
                 }
 
                 &-right {
@@ -109,6 +106,10 @@
                     padding: 1em;
                     align-items: center;
                     justify-content: center;
+
+                    & > p {
+                        padding-bottom: 10px;
+                    }
                 }
             }
         }
