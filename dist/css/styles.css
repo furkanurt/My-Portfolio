@@ -82,7 +82,7 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
   .home-background {
-    left: 20px; }
+    object-position: left center; }
   .home-box-top-left {
     width: 79%; }
     .home-box-top-left > h1 {
